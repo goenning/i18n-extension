@@ -13,6 +13,10 @@ Tell us which resource files you want to use.
 
 Just call extension method `.i18n()` on your strings or enum. Their content will be translated according to the resource files. See tests for examples on usage and strategy for failed lookups.
 
+    "Click here".i18n();
+    Gender.Male.i18n();
+    "FIRST_NAME".i18n();
+
 ## NuGet
 
 This is not a NuGet package, you will need to download and compile or copy the classes from this project to yours.
