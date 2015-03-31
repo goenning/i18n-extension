@@ -9,9 +9,14 @@ Create your resource files (.resx) as usual.
 
 Tell us which resource files you want to use.
 
+    I18nConfig.SetResources(
+        typeof(MyResources), 
+        typeof(OthersResources), 
+    );
+
 ## Step 3
 
-Just call extension method `.i18n()` on your strings or enum. Their content will be translated according to the resource files. See tests for examples on usage and strategy for failed lookups.
+Call extension method `.i18n()` on your strings or enum. The content will be translated according to the resource files. See tests for examples on usage and strategy for failed lookups.
 
     "Click here".i18n();
     Gender.Male.i18n();
